@@ -1,0 +1,52 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"SvenWollinger"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.29"
+			],
+			"dash": [
+				"0.11.6"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			20,
+			80
+		],
+		"uuid": "d24cd8a4-f93e-408b-983c-de5afbfba07c",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "a214efdf-5af1-457c-a331-c91c1ff9e409",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "1cb9eb79-98b1-48a2-b3f2-7b55c5540127",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}
