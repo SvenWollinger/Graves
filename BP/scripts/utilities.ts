@@ -18,12 +18,12 @@ export default class Utilities {
     return entity.getComponent(cId) as EntityHealthComponent;
   }
 
-  static giveItem(player: Player, item: string, itemName: string, id: string) {
+  static giveItem(player: Player, item: string, itemName: string, key: string, id: string) {
     let inventoryContainer = Utilities.getEntityInventoryComponent(player).container
     let itemStack = new ItemStack(item, 1);
-    if (!itemStack.isStackable) throw Error("Item ID can only be set on non-stackable items!")
+    if (itemStack.isStackable) throw Error("Item ID can only be set on non-stackable items!")
     itemStack.nameTag = `§r§f${itemName}`;
-    itemStack.setDynamicProperty(id, true);
+    itemStack.setDynamicProperty(key, id);
     inventoryContainer.addItem(itemStack);
   }
 }
